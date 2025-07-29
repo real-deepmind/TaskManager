@@ -48,11 +48,12 @@ public class Main {
             // filterTasks
             System.out.println("-- Filtering for long tasks more than 7 hours):--");
             List<Task> longTasks = TaskUtils.filterTasks(taskList, task -> task.getTimeOffer() > 7);
-            TaskUtils.processTasks(longTasks, System.out::println);
+            TaskUtils.processTasks(longTasks, item -> System.out.println(item)
+            );
 
             // mapTasks
             System.out.println("mine tasks ");
-            List<String> descriptions = TaskUtils.mapTasksToStrings(taskList, Task::getDescription);
+            List<String> descriptions = TaskUtils.mapTasksToStrings(taskList, task -> task.getDescription());
             System.out.println(descriptions);
 
         } catch (InvalidTaskException e) {
