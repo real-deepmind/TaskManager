@@ -36,7 +36,8 @@ public class Main {
         }
 
         //lambda
-        System.out.println("--- Demonstrating Functional Utilities (TaskUtils) ---");
+        System.out.println("--- use lamabda form for filter task , mine description of task from objects ,print ---");
+
         try {
             List<Task> taskList = new ArrayList<>();
             taskList.add(new Task("Review Code", 5));
@@ -45,8 +46,8 @@ public class Main {
 
 
             // filterTasks
-            System.out.println("-- Filtering for long tasks more than 8 hours):--");
-            List<Task> longTasks = TaskUtils.filterTasks(taskList, task -> task.getTimeOffer() > 8);
+            System.out.println("-- Filtering for long tasks more than 7 hours):--");
+            List<Task> longTasks = TaskUtils.filterTasks(taskList, task -> task.getTimeOffer() > 7);
             TaskUtils.processTasks(longTasks, System.out::println);
 
             // mapTasks
@@ -55,7 +56,7 @@ public class Main {
             System.out.println(descriptions);
 
         } catch (InvalidTaskException e) {
-            System.err.println("Error creating demo tasks: " + e.getMessage());
+            System.err.println("error: " + e.getMessage());
         }
 
         System.out.println("** end **");
