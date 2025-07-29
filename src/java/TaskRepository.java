@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class TaskRepository {
 
-    private static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/TaskRepository";
+    private static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/taskrepository";
     private static final String USER = "postgres";
     private static final String PASSWORD = "1234";
 

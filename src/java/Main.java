@@ -11,9 +11,9 @@ public class Main {
         System.out.println("--- adding  New Tasks ---");
         {
             try {
-                repository.addTask(new Task("Implement Login Page", 8), 1);
-                repository.addTask(new Task("Design Database Schema", 12), 1);
-                repository.addTask(new Task("Write Unit Tests", 6), 2);
+                repository.addTask(new Task("type 40 pages", 8), 1);
+                repository.addTask(new Task("create logo for factory", 12), 1);
+                repository.addTask(new Task("create application for factory", 6), 2);
                 System.out.println("3 tasks added successfully to the database");
             } catch (InvalidTaskException e) {
                 System.err.println("Error add tasks " + e.getMessage());
@@ -40,9 +40,9 @@ public class Main {
 
         try {
             List<Task> taskList = new ArrayList<>();
-            taskList.add(new Task("Review Code", 5));
-            taskList.add(new Task("Meet with Client", 2));
-            taskList.add(new Task("Refactor old module", 16));
+            taskList.add(new Task("type 500 pages", 5));
+            taskList.add(new Task("code java", 2));
+            taskList.add(new Task("update salary", 16));
 
 
             // filterTasks
