@@ -38,7 +38,6 @@ public class Main {
         //lambda
         System.out.println("--- Demonstrating Functional Utilities (TaskUtils) ---");
         try {
-            // یک لیست در حافظه برای نمایش کارکرد TaskUtils می‌سازیم.
             List<Task> taskList = new ArrayList<>();
             taskList.add(new Task("Review Code", 5));
             taskList.add(new Task("Meet with Client", 2));
